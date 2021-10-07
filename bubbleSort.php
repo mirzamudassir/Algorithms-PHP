@@ -25,7 +25,7 @@ function printArray($array, $n){
 
 $n= sizeof($array);
 
-//bubbleSort($array, $n);
-//printArray($array, $n);
+bubbleSort($array, $n);
+printArray($array, $n);
 
 ?>
