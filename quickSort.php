@@ -7,7 +7,20 @@ function partition(&$Array, $left, $right){
     $i= $left;
     $pivot= $Array[$right];
 
-    for()
+    for($j= $left; $j <= $right; $j++){
+        if($Array[$j] < $pivot){
+            $temp= $Array[$i];
+            $Array[$i]= $Array[$j];
+            $Array[$j]= $temp;
+            $i++;
+        }
+        $temp= $Array[$right];
+        $Array[$right]= $Array[$i];
+        $Array[$i]= $temp;
+
+        return $i;
+
+    }
 }
 
 //method to print the array
